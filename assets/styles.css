@@ -89,6 +89,17 @@ button, input[type="submit"]:hover {
     display: block;
     font-size: 16px;
 }
+
+/* main styles */
+.main-section:not(:first-child) { /* Hides all the other categories except the first one on load */
+    display: none;
+}
+
+
+
+
+
+
 /* footer styles */
 footer {
     background-color: #333;
