@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const main = document.querySelector('.main');
 
-    category.forEach(category => {
+    categories.forEach(category => {
         const section = document.createElement('section');
         section.classList.add('main-section');
 
