@@ -3,8 +3,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">    
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>EverythingTech</title>
 </head>
 <body>
@@ -14,10 +15,26 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Categories</a></li> <!-- Dropdown menu -->
+                        <!-- Dropdown menu -->
+                            <li class="dropdown">
+                                <a href="#">Categories</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Hardware</a></li>
+                                    <li><a href="#">Software</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">Internet</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                    <li><a href="#">Programming</a></li>
+                                    <li><a href="#">Setups and Looks</a></li>
+                                    <li><a href="#">Other</a></li>
+                                </ul>
+                            </li>
+
                         <li><a href="#">New Post</a></li> <!-- Only for logged in users --> 
-                        <li><a href="#">Top Posts</a></li> <!-- Top Posts of the week, in this case imaginary posts -->
-                        <li><a href="#">Recent Posts</a></li> <!-- Recent Posts of the week, in this case imaginary posts -->
+                        <li><a href="#">Top Posts</a></li> <!-- Top Posts of the week -->
+                        <li><a href="#">Recent Posts</a></li> <!-- Recent Posts of the week -->
                         <li><a href="#" id="login">Login</a></li> <!-- Login form, will be a popup no redirect -->
                         <li><a href="registration" id="signup">Sign Up</a></li> <!-- Sign Up form, will be a popup no redirect -->
                     </ul>
@@ -54,28 +71,28 @@
     </div>
     
     <footer> 
-        <div class="container">
+        <div class="container-footer">
             <p>EverythingTech &copy; 2017</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>Created by Lucas Rangfeldt</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>"Twitter link"</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>"Facebook link"</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>"Instagram link"</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>"Google+ link"</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>Terms and conditions</p>
         </div>
-        <div class="container">
+        <div class="container-footer">
             <p>Pricacy Policy</p>
         </div>
     </footer>
