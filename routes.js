@@ -34,6 +34,17 @@ router.get('/users/:username', (req, res) => {
     });
 });
 
+router.delete('/users/:username', (req, res) => {
+    users.deleteUser(req.params.username, function(error, results) {
+        if (error) {
+            res.status(500).send('Error deleting user');
+        } else {
+            res.status(200).send('User deleted');
+        }
+    });
+});
+
+
 router.post('/posts', (req, res) => {
     posts.createPost(req.body.userId, req.body.title, req.body.content, function(error, results) {
         if (error) {
