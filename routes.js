@@ -84,5 +84,4 @@ router.get('/comments', (req, res) => {
     });
 });
 
-
-
+module.exports = router;
