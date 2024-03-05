@@ -14,6 +14,16 @@ router.post('/users', (req, res) => {
     });
 });
 
+router.put('/users/:username', (req, res) => {
+    users.updateUser(req.params.username, req.body.password, req.body.role, function(error, results) {
+        if (error) {
+            res.status(500).send('Error updating user');
+        } else {
+            res.status(200).send('User updated');
+        }
+    });
+});
+
 router.get('/users/:username', (req, res) => {
     users.getUser(req.params.username, function(error, results) {
         if (error) {
@@ -62,4 +72,6 @@ router.get('/comments', (req, res) => {
         }
     });
 });
+
+
 
